@@ -1,2 +1,2 @@
 touch helloWorld.sh
-echo "print('Hello World!')" > helloWorld.sh
+echo "echo 'Hello World!'" > helloWorld.sh
