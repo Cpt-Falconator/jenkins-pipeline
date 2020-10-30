@@ -3,13 +3,13 @@ pipeline{
   stages{
     stage('make files'){
       steps{
-        sh "touch helloWorld.sh"
-        sh "echo 'print(\\"hello world!\\")' > helloWorld.sh"
-        sh "chmod +x helloWorld.sh"
+        sh "chmod +x ./scripts.sh"
+        sh "./scripts.sh"
       }
     }
     stage('run script'){
       steps{
+        sh "chmod +x helloWorld.sh"
         sh "./helloWorld.sh"
       }
     }
