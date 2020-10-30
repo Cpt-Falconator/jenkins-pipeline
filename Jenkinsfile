@@ -1,5 +1,5 @@
 pipeline{
-  agent any
+  agent python3
   stages{
     stage('make files'){
       steps{
