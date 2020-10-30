@@ -4,7 +4,7 @@ pipeline{
     stage('make files'){
       steps{
         sh "touch helloWorld.py"
-        sh "echo 'print('hello world!') > helloWorld.py'"
+        sh "echo 'print('hello world!')' > helloWorld.py"
       }
     }
     stage('run script'){
