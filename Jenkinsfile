@@ -1,5 +1,5 @@
 pipeline{
-  agent { docker { image 'python:3.5.1' } }
+  agent any
   stages{
     stage('make files'){
       steps{
@@ -9,7 +9,7 @@ pipeline{
     }
     stage('run script'){
       steps{
-        sh python3 helloWorld.py
+        sh helloWorld.py
       }
     }
   }
