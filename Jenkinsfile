@@ -9,7 +9,7 @@ pipeline{
     }
     stage('run script'){
       steps{
-        sh "chmod +x helloWorld.sh"
+        sh "chmod +x ./helloWorld.sh"
         sh "./helloWorld.sh"
       }
     }
